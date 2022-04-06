@@ -1,8 +1,6 @@
 # NBA_RTP
 
-# Is it Pneumonia?
-
-![image](https://github.com/RH3421/Project-4/blob/main/Images/Header.png)
+![image](https://github.com/RH3421/NBA_RTP/blob/main/Images/KD_Achilles.png)
 
 Author:  [Richard Hinds](https://github.com/RH3421)
 
