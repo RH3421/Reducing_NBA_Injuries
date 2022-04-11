@@ -1,6 +1,7 @@
 # NBA_RTP
 
 ![image](https://github.com/RH3421/NBA_RTP/blob/main/Images/KD_Achilles.png)
+Kevin Durant sustains a right Achilles tendon rupture in Game 5 of the 2019 NBA Finals.
 
 Author:  [Richard Hinds](https://github.com/RH3421)
 
