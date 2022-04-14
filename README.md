@@ -31,11 +31,7 @@ The 3 most impactful risk factors for season-ending injury were as follows:
   3. Players were 1.29 times more likely to sustain a season-ending injury for every minute of play accumulate in a season.
 
 ## Conclusions 
-To put the 3 most impactful predictors for season-ending injury into perspective, players in the study averaged 1.7 ± 0.8 personal fouls per game, have an average height of 79 ± 4 inches, and play an average of 1213 ± 857 minutes per seaon.
-
-
- 
-
+To put the 3 most impactful risk factors for season-ending injury into perspective, players in the study averaged 1.7 ± 0.8 personal fouls per game, had an average height of 79 ± 4 inches, and played an average of 1213 ± 857 minutes per seaon. It seems that players involved in more physical contact (personal fouls per game), who were taller (height), and accumulated a lot minutes over the season (minutes player per season) should develop strategies to mitigate these risks while minimizing impact on play.
 
 ## Recommendations
 
@@ -47,6 +43,8 @@ Based on the analysis it is recommended that players implement 3 targeted approa
 
 ## Future Considerations
 Performing a matched cohort study would address the target feature imbalance and allow for a more focused analysis.
+Segmentation of risk
+Risk for given combination of risk factors
 
 ## For More Information
 View the full model via the [Jupyter Notebook](https://github.com/RH3421/Project-4/blob/main/Main_Notebook.ipynb).
