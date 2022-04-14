@@ -17,7 +17,7 @@ Using a NBA injury dataset from [Kaggle](https://www.kaggle.com/datasets/ghopkin
 Though false negatives are more detrimental than false positives in the current context, accuracy was chosen to be the primary metric of model evaluation along with ROC AUC and f1 score as secondary and tertiary metrics, respectively.
 
 ## Modeling
-This was a binary classification study with out_for_season as the target variable.
+This was a binary classification study with ~~~out_for_season~~~ as the target variable.
 
 ## Results
 Best model f1 score
