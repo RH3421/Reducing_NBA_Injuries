@@ -17,10 +17,10 @@ Using a NBA injury dataset from [Kaggle](https://www.kaggle.com/datasets/ghopkin
 Though false negatives are more detrimental than false positives in the current context, accuracy was chosen to be the primary metric of model evaluation along with ROC AUC and f1 score as secondary and tertiary metrics, respectively.
 
 ## Modeling
-This was a binary classification study with ```out_for_season``` as the target variable. Independent variables with VIF > 10 were excluded from analysis as they demonstrated high multicollinearity. After a DummyClassifier was performed as a baseline model, a Pipeline was constructed to expedite the modeling process. Five classification models were used to analyze the data: Logistic Regression, Random Forest, XGBoost, Naive Bayes, and an ensemble model comprising the previous four models. Additionally, odds ratios for the most impactful risk factors for season-ending injury were calculated follwing the Logistic Regression model.
+This was a binary classification study with ```out_for_season``` as the target variable. Independent variables with VIF > 10 were excluded from analysis as they demonstrated high multicollinearity. After a DummyClassifier was performed as a baseline model, a Pipeline was constructed to expedite the modeling process. Five classification models were used to analyze the data: Logistic Regression, Random Forest, XGBoost, Naive Bayes, and an ensemble model comprising the previous four models. Additionally, odds ratios for the most impactful risk factors for season-ending injury were calculated following the Logistic Regression model.
 
 ## Results
-XGBoost achieved an accuracy of 87%, the highest of the cohort, though the ROC AUC of 50% and f1 score of 0% left much to be desired in terms of secondary and tertiary metrics. The next best performing model was Random Forest achieving an accuracy of 84%, a ROC AUC of 64%, and an f1 score of 15%. The performance of the remaining models can be seen below.
+XGBoost achieved an accuracy of 87%, the highest of the cohort, though the ROC AUC of 50% and f1 score of 0% left much to be desired in terms of secondary and tertiary metrics. The next best performing model was Random Forest achieving an accuracy of 84%, a ROC AUC of 64%, and a f1 score of 15%. The performance of the remaining models can be seen below.
 
 ![image](https://github.com/RH3421/NBA_RTP/blob/main/Images/Model_Performance.png) 
 
