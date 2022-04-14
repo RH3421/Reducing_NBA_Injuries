@@ -22,7 +22,7 @@ This was a binary classification study with ```out_for_season``` as the target v
 ## Results
 XGBoost achieved an accuracy of 87%, the highest of the cohort, though the ROC AUC of 50% and f1 score of 0% left much to be desired in terms of secondary and tertiary metrics. The next best performing model was Random Forest achieving an accuracy of 84%, a ROC AUC of 64%, and an f1 score of 15%. The performance of the remaining models can be seen below.
 
-![image](https://github.com/RH3421/NBA_RTP/blob/main/Images/Performance.png) 
+![image](https://github.com/RH3421/NBA_RTP/blob/main/Images/Model_Performance.png) 
 
 The 3 most impactful risk factors for season-ending injury were as follows:
 
