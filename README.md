@@ -17,21 +17,24 @@ Using a NBA injury dataset from [Kaggle](https://www.kaggle.com/datasets/ghopkin
 Though false negatives are more detrimental than false positives in the current context, accuracy was chosen to be the primary metric of model evaluation along with ROC AUC and f1 score as secondary and tertiary metrics, respectively.
 
 ## Modeling
-This was a binary classification study with ```out_for_season``` as the target variable. Independent variables with VIF > 10 were excluded from analysis as they demonstrated high multicollinearity. After a DummyClassifier was performed as a baseline model, a Pipeline was constructed to expedite the modeling process. Five classification models were used to analyze the data: Logistic Regression, Random Forest, XGBoost, Naive Bayes, and an ensamble model comprising the previous four models. Additionally, odds ratios for the most impactful independent variables were calculated follwing the Logistic Regression model.
+This was a binary classification study with ```out_for_season``` as the target variable. Independent variables with VIF > 10 were excluded from analysis as they demonstrated high multicollinearity. After a DummyClassifier was performed as a baseline model, a Pipeline was constructed to expedite the modeling process. Five classification models were used to analyze the data: Logistic Regression, Random Forest, XGBoost, Naive Bayes, and an ensamble model comprising the previous four models. Additionally, odds ratios for the most impactful risk factors for season-ending injury were calculated follwing the Logistic Regression model.
 
 ## Results
 XGBoost achieved an accuracy of 87%, the highest of the cohort, though the ROC AUC of 50% and f1 score of 0% left much to be desired in terms of secondary and tertiary metrics. The next best performing model was Random Forest achieving an accuracy of 84%, a ROC AUC of 64%, and an f1 score of 15%. The performance of the remaining models can be seen below.
 
-![image](https://github.com/RH3421/NBA_RTP/blob/main/Images/Model_Performance.png) | width=100
+![image](https://github.com/RH3421/NBA_RTP/blob/main/Images/Model_Performance.png) 
 
-The 3 most impactful predictors of season-ending injury were as follows:
+The 3 most impactful risk factors for season-ending injury were as follows:
 
-  1. 
-  2. 
-  3. 
+  1. Players were 1.4 times more likely to sustain a season-ending injury for every personal foul they committed per game.
+  2. Players were 1.37 times more likely to sustain a season-ending injury for every inch of height they had.
+  3. Players were 1.29 times more likely to sustain a season-ending injury for every minute of play accumulate in a season.
 
 ## Conclusions 
+To put the 3 most impactful predictors for season-ending injury into perspective, players in the study averaged 1.7 ± 0.8 personal fouls per game, have an average height of 79 ± 4 inches, and play an average of 1213 ± 857 minutes per seaon.
 
+
+ 
 
 
 ## Recommendations
