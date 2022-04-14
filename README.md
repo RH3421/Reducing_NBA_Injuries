@@ -41,7 +41,7 @@ Based on the analysis it is recommended that players implement 3 targeted approa
   3. 
 
 ## Future Considerations
-
+Performing a matched cohort study would address the target feature imbalance and allow for a more focused analysis.
 
 ## For More Information
 View the full model via the [Jupyter Notebook](https://github.com/RH3421/Project-4/blob/main/Main_Notebook.ipynb).
