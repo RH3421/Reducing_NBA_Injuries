@@ -3,21 +3,21 @@
 ![image](https://github.com/RH3421/NBA_RTP/blob/main/Images/KD_Achilles.png)
 Kevin Durant sustains a right Achilles tendon rupture in Game 5 of the 2019 NBA Finals.
 
-Author:  [Richard Hinds](https://github.com/RH3421)
+Author: [Richard Hinds](https://github.com/RH3421)
 
 ## Background
-Season-ending injuries are some of the most devasting for NBA players. Not even a decade ago, most of these injuries, including ACL and Achilles tendon ruptures were nearly always career-ending. While medical technology has advanced since then, season-ending injuries are still extremely distressing for players, front office staff, and fans.
+Season-ending injuries are some of the most devasting for NBA players. Not even a decade ago most of these injuries, including ACL and Achilles tendon ruptures, were nearly always career-ending. While medical technology has advanced since then, season-ending injuries are still extremely distressing for players, front office staff, and fans.
 
 ## Business Problem
 Given the physical, emotional, and financial toll of these injuries, I sought to quantify risk factors and identify NBA players at high risk for season-ending injuries. 
 
 ## Data Understanding
-Using a NBA injury dataset from [Kaggle](https://www.kaggle.com/datasets/ghopkins/nba-injuries-2010-2018) with more than 17,000 entries and [NBA player stats](https://www.nba.com/stats/players/traditional/?sort=PLAYER_NAME&dir=-1&Season=2009-10&SeasonType=Regular%20Season) to create a combined dataset, I was linked prior season stats with current season risk of season-ending injury. The hope is that such information may be used to modify player activity to reduce risk of injury and benefit NBA players and other stakeholders.
+Using a NBA injury dataset from [Kaggle](https://www.kaggle.com/datasets/ghopkins/nba-injuries-2010-2018) with more than 17,000 entries and the [NBA player stats](https://www.nba.com/stats/players/traditional/?sort=PLAYER_NAME&dir=-1&Season=2009-10&SeasonType=Regular%20Season), I created a combined dataset which links prior season stats with current season risk of season-ending injury. The hope is that such a model may be used to modify player activity to reduce risk of injury and benefit NBA players and other stakeholders.
 
-Given the relatively low incidence of season-ending injuries, f1_score was determined to be the primary metric of model evaluation along with ROC AUC as a secondary metric.
+Though false negatives are more detrimental than false positives in the current context, accuracy was chosen to be the primary metric of model evaluation along with ROC AUC and f1 score as secondary and tertiary metrics, respectively.
 
 ## Modeling
-
+This was a binary classification study with out_for_season as the target variable.
 
 ## Results
 Best model f1 score
