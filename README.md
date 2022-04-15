@@ -46,10 +46,7 @@ Based on the analysis it is recommended that players implement 3 targeted approa
   3. 
 
 ## Future Considerations
-Performing a matched cohort study would address the target feature imbalance and allow for a more focused analysis.
-Segmentation of risk
-Risk for given combination of risk factors
-Extrapolate recommendations to the weekend warrior
+The next steps to improve upon this analysis would be to perform a matched cohort study to address the target feature imbalance. Along with this, segmenting the analysis by specific injury (ACL, Achilles tendon, etc.) would allow for more focused risk reduction recommendations. Last, extrapolating the findings and recommendations to the weekend warrior would widen the utility of this work and likely reduce risk of injury among this highly passionate cohort.
 
 ## For More Information
 View the full model via the [Jupyter Notebook](https://github.com/RH3421/NBA_RTP/blob/main/Main_Notebook.ipynb).
