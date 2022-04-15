@@ -14,7 +14,7 @@ Given the physical, emotional, and financial toll of these injuries, I sought to
 ## Data Understanding
 Using a NBA injury dataset from [Kaggle](https://www.kaggle.com/datasets/ghopkins/nba-injuries-2010-2018) with more than 17,000 entries over 9 seaons and the [NBA player stats](https://www.nba.com/stats/players/traditional/?sort=PLAYER_NAME&dir=-1&Season=2009-10&SeasonType=Regular%20Season), I created a combined dataset which links prior season stats with current season risk of season-ending injury. The hope is that such a model may be used to identify at-risk players so that their activity can be modified to reduce risk of injury. This would benefit both NBA players and other stakeholders.
 
-### ChartPercent of players with seasonending injury by season
+![image](https://github.com/RH3421/NBA_RTP/blob/main/Images/Incidence_of_injury.png)
 
 ## Modeling
 This was a binary classification study with ```out_for_season``` as the target variable. Independent variables with VIF > 10 were excluded from analysis as they demonstrated high multicollinearity. After a DummyClassifier was performed as a baseline model, a Pipeline was constructed to expedite the modeling process. Five classification models were used to analyze the data: Logistic Regression, Random Forest, XGBoost, Naive Bayes, and an ensemble model comprising the previous four models. Additionally, odds ratios for the most impactful risk factors for season-ending injury were calculated following the Logistic Regression model. Though false negatives are more detrimental than false positives in the current context, accuracy was chosen to be the primary metric of model evaluation along with ROC AUC and f1 score as secondary and tertiary metrics, respectively.
@@ -31,9 +31,9 @@ The 3 most impactful risk factors for season-ending injury were as follows:
   3. Players were 1.29 times more likely to sustain a season-ending injury for every minute of play accumulated in a season.
 
 ## Conclusions 
-To put the 3 most impactful risk factors for season-ending injury into perspective, players in the study averaged 1.7 ± 0.8 personal fouls per game, had an average height of 79 ± 4 inches, and played an average of 1213 ± 857 minutes per seaon. It seems that players involved in more physical contact (personal fouls per game), who were taller (height), and accumulated a lot minutes over the season (minutes played per season) are at high risk and require strategies to mitigate risks while minimizing impact on play.
+To put the 3 most impactful risk factors for season-ending injury into perspective, players in the study averaged 1.7 ± 0.8 personal fouls per game, had an average height of 79 ± 4 inches, and played an average of 1213 ± 857 minutes per seaon. It seems that players involved in more physical contact (personal fouls per game), who were taller (height), and accumulated a lot minutes over the season (minutes played per season) are at high risk and require strategies to mitigate risks while minimizing impact on play. Below is a comparison of the mean values for the 3 most impactful risk factors between those who sustained season ending injuries and those who did not.
 
-### Chartdifferences in injury vs uninjuried cohort top3 risk factors
+![image](https://github.com/RH3421/NBA_RTP/blob/main/Images/risk_factors.png)
 
 ## Recommendations
 
