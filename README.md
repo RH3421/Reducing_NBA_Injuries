@@ -50,6 +50,6 @@ Risk for given combination of risk factors
 Extrapolate recommendations to the weekend warrior
 
 ## For More Information
-View the full model via the [Jupyter Notebook](https://github.com/RH3421/Project-4/blob/main/Main_Notebook.ipynb).
+View the full model via the [Jupyter Notebook](https://github.com/RH3421/NBA_RTP/blob/main/Main_Notebook.ipynb).
 
 ## Repository Structure
