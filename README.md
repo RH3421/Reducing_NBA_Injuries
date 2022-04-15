@@ -33,7 +33,7 @@ The 3 most impactful risk factors for season-ending injury were as follows:
 ## Conclusions 
 To put the 3 most impactful risk factors for season-ending injury into perspective, players in the study averaged 1.7 ± 0.8 personal fouls per game, had an average height of 79 ± 4 inches, and played an average of 1213 ± 857 minutes per seaon. Below is a comparison of the median values for the 3 most impactful risk factors between those who sustained season ending injuries and those who did not.
 
-![image](https://github.com/RH3421/NBA_RTP/blob/main/Images/Median_riskfactors.png)
+![image](https://github.com/RH3421/NBA_RTP/blob/main/Images/Median_risk_factors.png)
 
 It seems that players involved in more physical play (personal fouls per game), who were taller (height), and accumulated a lot minutes over the season (minutes played per season) are at high risk and require strategies to mitigate risks while minimizing impact on play.
  
