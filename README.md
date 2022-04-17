@@ -43,7 +43,7 @@ Based on the analysis it is recommended that players implement 3 targeted approa
 
   1. Players averaging >2 personal fouls per game should be counseled on foul avoidance strategies focused on their specific predominant foul type (blocking foul, illegal screen, etc).
   2. Players over 80 inches (6'8") tall should be on an injury prevention training plan and closely monitored for signs of injury.
-  3. Players who average >22 minutes per game (~1575 minutes per season) should also be on an injury prevention training plan and should be rested strategically (before/after timeouts and end of quarters).
+  3. Players who average >19 minutes per game (~1575 minutes per season) should also be on an injury prevention training plan and should be rested strategically (before/after timeouts and end of quarters).
 
 ## Future Considerations
 The next steps to improve upon this analysis would be to perform a matched cohort study to address the target feature imbalance. Along with this, segmenting the analysis by specific injury (ACL, Achilles tendon, etc.) would allow for more focused risk reduction recommendations. Last, extrapolating the findings and recommendations to the weekend warrior would widen the utility of this work and likely reduce risk of injury among this highly passionate cohort.
