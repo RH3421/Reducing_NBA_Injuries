@@ -49,3 +49,9 @@ The next steps to improve upon this analysis would be to perform a matched cohor
 View the full model via the [Jupyter Notebook](https://github.com/RH3421/NBA_RTP/blob/main/Main_Notebook.ipynb).
 
 ## Repository Structure
+├── [Data/]()    ------------------------------------->
+├── [Images/]() -------------------------------------->
+├── [.gitignore]() ---------------------------------> .gitignore used for the project.
+├── [Main_Notebook.ipynb]()              --------------------->
+├── [Presentation.pdf]()              -------------------------->
+├── [README.md]()              ------------------------------>
