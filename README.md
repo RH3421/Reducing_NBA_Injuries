@@ -13,7 +13,7 @@ Using a NBA injury dataset from [Kaggle](https://www.kaggle.com/datasets/ghopkin
 ![image](https://github.com/RH3421/NBA_RTP/blob/main/Images/Incidence_injury.png)
 
 ## Modeling
-This was a binary classification study with ```out_for_season``` as the target variable. Independent variables with VIF > 10 were excluded from analysis as they demonstrated high multicollinearity. After a DummyClassifier was performed as a baseline model, a Pipeline was constructed to expedite the modeling process. Four classification models were used to analyze the data: Logistic Regression, Random Forest, XGBoost, and an ensemble model comprising the previous three models. Additionally, odds ratios for the most impactful risk factors for season-ending injury were calculated following the Logistic Regression model. Though false negatives are more detrimental than false positives in the current context, accuracy was chosen to be the primary metric of model evaluation along with ROC AUC and f1_score as secondary and tertiary metrics, respectively.
+This was a binary classification study with ```out_for_season``` as the target variable. Independent variables with VIF > 10 were excluded from analysis as they demonstrated high multicollinearity. After a DummyClassifier was performed as a baseline model, a Pipeline was constructed to expedite the modeling process. Four classification models were used to analyze the data: Logistic Regression, Random Forest, XGBoost, and an ensemble model comprised of the previous three models. Additionally, odds ratios for the most impactful risk factors for season-ending injury were calculated following the Logistic Regression model. Though false negatives are more detrimental than false positives in the current context, accuracy was chosen to be the primary metric of model evaluation along with ROC AUC and f1_score as secondary and tertiary metrics, respectively.
 
 ## Results
 Both RandomForest and XGBoost achieved an accuracy of 90% with a ROC AUC of 96% and f1 score of 90%. This means that our model was very effective in predicting season ending injury in among NBA players The performance of all models can be seen below.
@@ -23,7 +23,7 @@ Both RandomForest and XGBoost achieved an accuracy of 90% with a ROC AUC of 96% 
 The 3 most impactful risk factors for season-ending injury were as follows:
 
 1. Players were 1.57 times more likely to sustain a season-ending injury for every personal foul they committed per game.
-2. Players were 1.23 times more likely to sustain a season-ending injury for every pound of weight they had.
+2. Players were 1.23 times more likely to sustain a season-ending injury for every pound they weighed.
 3. Players were 1.2 times more likely to sustain a season-ending injury for every percent of 3 point shooting accuracy they demonstrated.
 
 ## Conclusions 
