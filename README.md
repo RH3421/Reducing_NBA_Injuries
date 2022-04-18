@@ -16,7 +16,7 @@ Using a NBA injury dataset from [Kaggle](https://www.kaggle.com/datasets/ghopkin
 This was a binary classification study with ```out_for_season``` as the target variable. Independent variables with VIF > 10 were excluded from analysis as they demonstrated high multicollinearity. After a DummyClassifier was performed as a baseline model, a Pipeline was constructed to expedite the modeling process. Four classification models were used to analyze the data: Logistic Regression, Random Forest, XGBoost, and an ensemble model comprised of the previous three models. Additionally, odds ratios for the most impactful risk factors for season-ending injury were calculated following the Logistic Regression model. Though false negatives are more detrimental than false positives in the current context, accuracy was chosen to be the primary metric of model evaluation along with ROC AUC and f1_score as secondary and tertiary metrics, respectively.
 
 ## Results
-Both RandomForest and XGBoost achieved an accuracy of 90% with a ROC AUC of 96% and f1 score of 90%. This means that our model was very effective in predicting season ending injury in among NBA players The performance of all models can be seen below.
+Both RandomForest and XGBoost achieved an accuracy of 90% with a ROC AUC of 96% and f1_score of 90%. This means that our model was very effective in predicting season ending injury in among NBA players The performance of all models can be seen below.
 
 ![image](https://github.com/RH3421/Reducing_NBA_Injuries/blob/main/Images/Model_Comparison.png) 
 
