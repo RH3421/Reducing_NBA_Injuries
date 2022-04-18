@@ -1,6 +1,6 @@
 # Reducing NBA Injuries
 ![image](https://github.com/RH3421/Reducing_NBA_Injuries/blob/main/Images/DC_Achilles.jpeg)
-<sub>DeMarcus Cousins sustains a left Achilles tendon rupture in on January 26, 2018.</sub>
+<sub>DeMarcus Cousins sustains a left Achilles tendon rupture on January 26, 2018.</sub>
 
 Author: [Richard Hinds](https://github.com/RH3421)
 
