@@ -1,6 +1,6 @@
 # Reducing NBA Injuries
 ![image](https://github.com/RH3421/Reducing_NBA_Injuries/blob/main/Images/DC_Achilles.jpeg)
-<sub>Kevin Durant sustains a right Achilles tendon rupture in Game 5 of the 2019 NBA Finals.</sub>
+<sub>DeMarcus Cousins sustains a left Achilles tendon rupture in on January 26, 2018.</sub>
 
 Author: [Richard Hinds](https://github.com/RH3421)
 
