@@ -51,7 +51,7 @@ View the full model via the [Jupyter Notebook](https://github.com/RH3421/NBA_RTP
 ## Repository Structure
 ├── [Data/](https://github.com/RH3421/NBA_RTP/tree/main/Data)    ---------------------------------------> Project data</br>
 ├── [Images/](https://github.com/RH3421/NBA_RTP/tree/main/Images) ------------------------------------> Project images</br>
-├── [.gitignore](https://github.com/RH3421/NBA_RTP/blob/main/.gitignore) ----------------------------------> Project .gitignore</br>
-├── [Main_Notebook.ipynb](https://github.com/RH3421/NBA_RTP/blob/main/Main_Notebook.ipynb)              ----------------------> Jupyter Notebook containing finalized code</br>
+├── [.gitignore](https://github.com/RH3421/NBA_RTP/blob/main/.gitignore) -----------------------------------> Project .gitignore</br>
+├── [Main_Notebook.ipynb](https://github.com/RH3421/NBA_RTP/blob/main/Main_Notebook.ipynb)              ---------------------> Jupyter Notebook containing finalized code</br>
 ├── [Presentation.pdf](https://github.com/RH3421/NBA_RTP/blob/main/Presentation.pdf)              ---------------------------> Presentation PDF</br>
 ├── [README.md](https://github.com/RH3421/NBA_RTP/edit/main/README.md)              -------------------------------> Repo README.md (You are here now)
