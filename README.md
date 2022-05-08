@@ -2,7 +2,7 @@
 ![image](https://github.com/RH3421/Reducing_NBA_Injuries/blob/main/Images/DC_Achilles.jpeg)
 <sub>DeMarcus Cousins sustains a left Achilles tendon rupture on January 26, 2018.</sub>
 
-Logistic regression binary classifier study.</br>
+Logistic regression binary classifier study identified risk factor that confers 1.57 times increased risk of season ending injury and predicts nearly 70% of season ending injuries among NBA players.</br>
 Technologies: Python, git</br>
 Libraries: Pandas, NumPy, Statsmodels, SKLearn, IMBLearn, Matplotlib/Seaborn, XGBboost, Collections, Zipfile</br>
 Techniques: EDA, ETL, Machine Learning, Data Visualization</br>
