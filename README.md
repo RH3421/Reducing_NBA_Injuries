@@ -2,10 +2,10 @@
 ![image](https://github.com/RH3421/Reducing_NBA_Injuries/blob/main/Images/DC_Achilles.jpeg)
 <sub>DeMarcus Cousins sustains a left Achilles tendon rupture on January 26, 2018.</sub>
 
-Logistic regression binary classifier study.
-Technologies: Python, git
-Libraries: Pandas, NumPy, Statsmodels, SKLearn, IMBLearn, Matplotlib/Seaborn, XGBboost, Collections, Zipfile
-Techniques: EDA, ETL, Machine Learning, Data Visualization
+Logistic regression binary classifier study.</br>
+Technologies: Python, git</br>
+Libraries: Pandas, NumPy, Statsmodels, SKLearn, IMBLearn, Matplotlib/Seaborn, XGBboost, Collections, Zipfile</br>
+Techniques: EDA, ETL, Machine Learning, Data Visualization</br>
 
 Author: [Richard Hinds](https://github.com/RH3421)
 
