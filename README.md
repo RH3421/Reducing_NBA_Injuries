@@ -6,7 +6,6 @@ Logistic regression binary classifier study.</br>
 Technologies: Python, git</br>
 Libraries: Pandas, NumPy, Statsmodels, SKLearn, IMBLearn, Matplotlib/Seaborn, XGBboost, Collections, Zipfile</br>
 Techniques: EDA, ETL, Machine Learning, Data Visualization</br>
-
 Author: [Richard Hinds](https://github.com/RH3421)
 
 ## Background
