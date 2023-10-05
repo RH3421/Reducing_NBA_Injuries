@@ -13,10 +13,10 @@ Using a NBA injury dataset from [Kaggle](https://www.kaggle.com/datasets/ghopkin
 ![image](https://github.com/RH3421/NBA_RTP/blob/main/Images/Incidence_injury.png)
 
 ## Modeling
-This was a binary classification study with ```out_for_season``` as the target variable. Independent variables with variable inflation factor (VIF) > 10 were excluded from analysis as they demonstrated high multicollinearity. After a DummyClassifier was performed as a baseline model, a Pipeline was constructed to expedite the modeling process. The data was then fed into a Logistic Regression model and odds ratios were calculated to identify the most impactful risk factors for season-ending injury. Though false negatives are more detrimental than false positives in the current context, accuracy was chosen to be the primary metric of model evaluation along with ROC AUC and f1_score as secondary and tertiary metrics, respectively.
+This was a binary classification study with ```out_for_season``` as the target variable. Independent variables with variable inflation factor (VIF) > 10 were excluded from analysis as they demonstrated high multicollinearity. After a DummyClassifier was performed as a baseline model, a Pipeline was constructed to expedite the modeling process. The data was then fed into a Random Forest model though odds ratios were calculated from a Logistic Regression model to identify the most impactful risk factors for season-ending injury. Though false negatives are more detrimental than false positives in the current context, accuracy was chosen to be the primary metric of model evaluation along with ROC AUC and f1_score as secondary and tertiary metrics, respectively.
 
 ## Results
-Accuracy for the logistic regression model was 67%, meaning we were able to predict nearly 70% of the season-ending injuries in the NBA, the season before they happened.
+Accuracy for the Random Forest model was 90%, meaning we were able to accurately predict nearly all of the season-ending injuries in the NBA, the season before they happened.
 
 The 3 most impactful risk factors for season-ending injury were as follows:
 
