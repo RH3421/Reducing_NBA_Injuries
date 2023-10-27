@@ -23,7 +23,7 @@ The 3 most impactful risk factors for season-ending injury were as follows:
 3. Players were 1.32 times more likely to sustain a season-ending injury for every player foul they committed.
 
 Below is a visualization demonstrating the differences between the season ending injury cohort of players and the cohort that did not sustain season ending injuries. 
-![image](https://github.com/RH3421/Reducing_NBA_Injuries/blob/main/Images/Mean_risk_factors.png)
+![image](https://github.com/RH3421/Reducing_NBA_Injuries/blob/main/Images/Median_risk_factors.png)
 
 
 ## Conclusions 
