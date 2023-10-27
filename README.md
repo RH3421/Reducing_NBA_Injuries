@@ -2,45 +2,40 @@
 ![image](https://github.com/RH3421/Reducing_NBA_Injuries/blob/main/Images/DC_Achilles.jpeg)
 <sub>DeMarcus Cousins sustains a left Achilles tendon rupture on January 26, 2018.</sub>
 
-Author: [Richard Hinds](https://github.com/RH3421)
-
 ## Background
 Season ending injuries are some of the most devastating for NBA players. Not even a decade ago most of these injuries, including ACL and Achilles tendon ruptures, were nearly always career-ending. While medical technology has advanced since then, season-ending injuries are still extremely distressing for players, front office staff, and fans. Given the physical, emotional, and financial toll of these injuries, I sought to quantify risk factors and develop a model to identify NBA players at high risk for season-ending injuries. 
 
 ## Data Understanding
-Using a NBA injury dataset from [Kaggle](https://www.kaggle.com/datasets/ghopkins/nba-injuries-2010-2018) with more than 17,000 entries over 9 seasons and [NBA player stats](https://www.nba.com/stats/players/traditional/?sort=PLAYER_NAME&dir=-1&Season=2009-10&SeasonType=Regular%20Season), I created a combined dataset which links prior season stats with current season risk of season-ending injury. The hope is that such a model may be used to identify at-risk players so that their activity can be modified to reduce risk of injury. This would benefit both NBA players and other stakeholders.
+Using a NBA injury dataset from [Kaggle](https://www.kaggle.com/datasets/ghopkins/nba-injuries-2010-2018) with more than 17,000 entries over 9 seasons and [NBA player stats](https://www.nba.com/stats/players/traditional/?sort=PLAYER_NAME&dir=-1&Season=2009-10&SeasonType=Regular%20Season), I created a combined dataset which links prior season stats with current season injury profile. The hope is that such a model may be used to identify at-risk players so that their activity can be modified to reduce risk of injury. This would benefit both NBA players and other stakeholders.
 
 ![image](https://github.com/RH3421/NBA_RTP/blob/main/Images/Incidence_injury.png)
 
 ## Modeling
-This was a binary classification study with ```out_for_season``` as the target variable. Independent variables with variable inflation factor (VIF) > 10 were excluded from analysis as they demonstrated high multicollinearity. After a DummyClassifier was performed as a baseline model, a Pipeline was constructed to expedite the modeling process. The data was then fed into a Random Forest model though odds ratios were calculated from a Logistic Regression model to identify the most impactful risk factors for season-ending injury. Though false negatives are more detrimental than false positives in the current context, accuracy was chosen to be the primary metric of model evaluation along with ROC AUC and f1_score as secondary and tertiary metrics, respectively.
+This was a binary classification study with ```out_for_season``` as the target variable. Independent variables with variance inflation factor VIF > 10 were excluded from analysis as they demonstrated high multicollinearity. A Pipeline was used to expedite the modeling process. A DummyClassifier was used to generate a baseline model. Four classification models were then used to analyze the data: LogisticRegression, RandomForestClassifier, XGBClassifier, and an ensemble model comprised of the previous three models. Additionally, odds ratios for the most impactful risk factors for season-ending injury were calculated following the LogisticRegression analysis. Though false negatives are more detrimental than false positives in the current context, accuracy was chosen to be the primary metric of model evaluation given its common usage. f1_score and ROC AUC were used as secondary metrics.
 
 ## Results
-Accuracy for the Random Forest model was 90%, meaning we were able to accurately predict nearly all of the season-ending injuries in the NBA, the season before they happened.
+RandomForestClassifier achieved had the greatest accuracy at 84% while tying for the highest ROC AUC at 70%. This means that our model was accurate in predicting season ending injury among NBA players.
 
 The 3 most impactful risk factors for season-ending injury were as follows:
 
-1. Players were 1.57 times more likely to sustain a season-ending injury for every personal foul they committed per game.
-2. Players were 1.23 times more likely to sustain a season-ending injury for every pound they weighed.
-3. Players were 1.2 times more likely to sustain a season-ending injury for every percent of 3 point shooting accuracy they demonstrated.
+1. Players were 1.38 times more likely to sustain a season-ending injury for every cumulative minute played per season.
+2. Players were 1.34 times more likely to sustain a season-ending injury for every 3-pointer they attempted per game.
+3. Players were 1.32 times more likely to sustain a season-ending injury for every player foul they committed.
 
-To put the 3 most impactful risk factors for season-ending injury into perspective, players in the study averaged 1.7 ± 0.8 personal fouls per game, had an average weight of 222 ± 27 pounds, and had an average 3 point field goal percentage of 25 ± 17%. Below is a comparison of the mean values for the 3 most impactful risk factors between those who sustained season ending injuries and those who did not. 
-
-Below is a visualization demonstrating the differences between the season ending injury cohort of players and the cohort that did not sustain season ending injuries. Players in the season ending injury cohort on average committed 2 personal fouls vs 1.7 for those who were not injured, weighed slightly more, 223 lbs vs 221 lbs, and shot 3 pointers better 28% vs 25%. 
-
+Below is a visualization demonstrating the differences between the season ending injury cohort of players and the cohort that did not sustain season ending injuries. 
 ![image](https://github.com/RH3421/Reducing_NBA_Injuries/blob/main/Images/Mean_risk_factors.png)
 
 
 ## Conclusions 
-It seems that players involved in more physical play (personal fouls per game), who weighed more (weight), and who shot 3 pointers well (3 point field goal percentage) are at high risk and require strategies to mitigate risks while minimizing impact on play.
+Players who accumulated heavy minutes throughout the season (cumulative minutes played per season), attempted many 3-pointers (3-pointers attempted per game), and were involved in more physical play (personal fouls per game) were at higher risk of season-ending injury and require strategies to mitigate risks while minimizing impact on play.
 
 ## Recommendations
 
-Based on the analysis it is recommended that players implement 3 targeted approaches to reduce risk:
+Based on the analysis it is recommended that players and teams implement 3 targeted approaches to reduce risk:
 
-1. Players averaging >2 personal fouls per game should be counseled on foul avoidance strategies focused on their specific predominant foul type (blocking foul, illegal screen, etc).
-2. Players weighing >223 pounds should be on an injury prevention training plan and closely monitored for signs of injury.
-3. Players who have a 3 point shooting percentage >28% should be counseled on safe landing strategies when shooting 3 point shots.
+1. Players averging >21 minutes of play per game should consider approved periodic rest strategies throughout the season.
+2. Players attempting >2 3-pointers per game should be counseled on safe landing strategies when shooting 3-point shots.
+3. Players averging >2 personal fouls per game should be counseled on foul avoidance strategies focused on their specific predominant foul type (blocking foul, offensive foul, etc).
 
 ## Future Considerations
 The next steps to improve upon this analysis would be to perform a matched cohort risk analysis, matching injured players with non-injured players of similar demographics to stratify risk. Next, segmenting the analysis by specific injury (ACL, Achilles tendon, etc.) would allow for more focused risk reduction recommendations. Last, extrapolating the findings and recommendations to the weekend warrior would widen the utility of this work and likely reduce risk of injury among this highly passionate cohort.
@@ -50,5 +45,10 @@ The next steps to improve upon this analysis would be to perform a matched cohor
 ├── [Images/](https://github.com/RH3421/NBA_RTP/tree/main/Images) ------------------------------------> Project images</br>
 ├── [.gitignore](https://github.com/RH3421/NBA_RTP/blob/main/.gitignore) -----------------------------------> Project .gitignore</br>
 ├── [Main_Notebook.ipynb](https://github.com/RH3421/NBA_RTP/blob/main/Main_Notebook.ipynb) ----------------------> Jupyter Notebook containing finalized code</br>
-├── [Presentation.pdf](https://github.com/RH3421/NBA_RTP/blob/main/Presentation.pdf) ---------------------------> Presentation PDF</br>
-├── [README.md](https://github.com/RH3421/NBA_RTP/edit/main/README.md) -------------------------------> Repo README.md (You are here now)
+├── [App.ipynb](https://github.com/RH3421/NBA_RTP/blob/main/App.ipynb) -------------------------------> Jupyter Notebook containing App code</br>
+├── [app.py](https://github.com/RH3421/NBA_RTP/blob/main/app.py) -------------------------------> Python script for Streamlit App</br>
+├── [CurrentPlayers.sav](https://github.com/RH3421/NBA_RTP/blob/main/CurrentPlayers.sav) -------------------------------> Player Data for Streamlit App</br>
+├── [Features.sav](https://github.com/RH3421/NBA_RTP/blob/main/Features.sav) -------------------------------> Features for Streamlit App</br>
+├── [Model.sav](https://github.com/RH3421/NBA_RTP/blob/main/Model.sav) -------------------------------> Model for Streamlit App</br>
+├── [requirements.txt](https://github.com/RH3421/NBA_RTP/blob/main/requirements.txt) ---------------------------> App Dependencies file</br>
+├── [README.md](https://github.com/RH3421/NBA_RTP/edit/main/README.md) -------------------------------> Repository README.md (You are here now)
