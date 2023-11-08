@@ -17,7 +17,7 @@ Using a NBA injury dataset from [Kaggle](https://www.kaggle.com/datasets/ghopkin
 This was a binary classification study with ```out_for_season``` as the target variable. Independent variables with variance inflation factor VIF > 10 were excluded from analysis as they demonstrated high multicollinearity. A Pipeline was used to expedite the modeling process. A DummyClassifier was used to generate a baseline model. Four classification models were then used to analyze the data: LogisticRegression, RandomForestClassifier, XGBClassifier, and an ensemble model comprised of the previous three models. Additionally, odds ratios for the most impactful risk factors for season-ending injury were calculated following the LogisticRegression analysis. Though false negatives are more detrimental than false positives in the current context, accuracy was chosen to be the primary metric of model evaluation given its common usage. f1_score and ROC AUC were used as secondary metrics.
 
 ## Results
-RandomForestClassifier achieved had the greatest accuracy at 84% while tying for the highest ROC AUC at 70%. This means that our model was accurate in predicting season ending injury among NBA players.
+RandomForestClassifier achieved had the greatest accuracy at 85%. This means that the model was accurate in predicting season ending injury among NBA players.
 
 The 3 most impactful risk factors for season-ending injury were as follows:
 
