@@ -5,6 +5,9 @@
 ## Background
 Season ending injuries are some of the most devastating for NBA players. Not even a decade ago most of these injuries, including ACL and Achilles tendon ruptures, were nearly always career-ending. While medical technology has advanced since then, season-ending injuries are still extremely distressing for players, front office staff, and fans. Given the physical, emotional, and financial toll of these injuries, I sought to quantify risk factors and develop a model to identify NBA players at high risk for season-ending injuries. 
 
+## Streamlit App
+Select a player and discover their current season predicted probability of season-ending injury using the [App](https://nba-injury-predictor.streamlit.app/). 
+
 ## Data Understanding
 Using a NBA injury dataset from [Kaggle](https://www.kaggle.com/datasets/ghopkins/nba-injuries-2010-2018) with more than 17,000 entries over 9 seasons and [NBA player stats](https://www.nba.com/stats/players/traditional/?sort=PLAYER_NAME&dir=-1&Season=2009-10&SeasonType=Regular%20Season), I created a combined dataset which links prior season stats with current season injury profile. The hope is that such a model may be used to identify at-risk players so that their activity can be modified to reduce risk of injury. This would benefit both NBA players and other stakeholders.
 
@@ -45,10 +48,4 @@ The next steps to improve upon this analysis would be to perform a matched cohor
 ├── [Images/](https://github.com/RH3421/NBA_RTP/tree/main/Images) ------------------------------------> Project images</br>
 ├── [.gitignore](https://github.com/RH3421/NBA_RTP/blob/main/.gitignore) -----------------------------------> Project .gitignore</br>
 ├── [Main_Notebook.ipynb](https://github.com/RH3421/NBA_RTP/blob/main/Main_Notebook.ipynb) ----------------------> Jupyter Notebook containing finalized code</br>
-├── [App.ipynb](https://github.com/RH3421/NBA_RTP/blob/main/App.ipynb) -------------------------------> Jupyter Notebook containing App code</br>
-├── [app.py](https://github.com/RH3421/NBA_RTP/blob/main/app.py) -------------------------------> Python script for Streamlit App</br>
-├── [CurrentPlayers.sav](https://github.com/RH3421/NBA_RTP/blob/main/CurrentPlayers.sav) -------------------------------> Player Data for Streamlit App</br>
-├── [Features.sav](https://github.com/RH3421/NBA_RTP/blob/main/Features.sav) -------------------------------> Features for Streamlit App</br>
-├── [Model.sav](https://github.com/RH3421/NBA_RTP/blob/main/Model.sav) -------------------------------> Model for Streamlit App</br>
-├── [requirements.txt](https://github.com/RH3421/NBA_RTP/blob/main/requirements.txt) ---------------------------> App Dependencies file</br>
 ├── [README.md](https://github.com/RH3421/NBA_RTP/edit/main/README.md) -------------------------------> Repository README.md (You are here now)
