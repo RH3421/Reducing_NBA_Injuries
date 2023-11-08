@@ -17,13 +17,13 @@ Using a NBA injury dataset from [Kaggle](https://www.kaggle.com/datasets/ghopkin
 This was a binary classification study with ```out_for_season``` as the target variable. Independent variables with variance inflation factor VIF > 10 were excluded from analysis as they demonstrated high multicollinearity. A Pipeline was used to expedite the modeling process. A DummyClassifier was used to generate a baseline model. Four classification models were then used to analyze the data: LogisticRegression, RandomForestClassifier, XGBClassifier, and an ensemble model comprised of the previous three models. Additionally, odds ratios for the most impactful risk factors for season-ending injury were calculated following the LogisticRegression analysis. Though false negatives are more detrimental than false positives in the current context, accuracy was chosen to be the primary metric of model evaluation given its common usage. f1_score and ROC AUC were used as secondary metrics.
 
 ## Results
-RandomForestClassifier achieved had the greatest accuracy at 85%. This means that the model was accurate in predicting season ending injury among NBA players.
+RandomForestClassifier achieved had the greatest accuracy at 83%. This means that the model was accurate in predicting season ending injury among NBA players.
 
 The 3 most impactful risk factors for season-ending injury were as follows:
 
-1. Players were 1.38 times more likely to sustain a season-ending injury for every cumulative minute played per season.
-2. Players were 1.34 times more likely to sustain a season-ending injury for every 3-pointer they attempted per game.
-3. Players were 1.32 times more likely to sustain a season-ending injury for every player foul they committed.
+1. Players were 1.41 times more likely to sustain a season-ending injury for every cumulative minute played per season.
+2. Players were 1.28 times more likely to sustain a season-ending injury for every 3-pointer they attempted per game.
+3. Players were 1.21 times more likely to sustain a season-ending injury for every player foul they committed.
 
 Below is a visualization demonstrating the differences between the season ending injury cohort of players and the cohort that did not sustain season ending injuries. 
 ![image](https://github.com/RH3421/Reducing_NBA_Injuries/blob/main/Images/Median_risk_factors.png)
